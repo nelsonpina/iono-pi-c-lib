@@ -50,14 +50,14 @@ if [ x$1 != "x" ]; then
 	exit 1
 fi
 
-echo "=== wiringPi ==="
-cd wiringPi
-./build
+#echo "=== wiringPi ==="
+#cd wiringPi
+#./build
 
 echo "=== ionoPi ==="
 cd ../ionoPi
-sudo make uninstall
-sudo make install
+make uninstall
+make install
 
 echo
 echo Done.
